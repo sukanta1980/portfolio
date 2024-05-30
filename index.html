@@ -3,20 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Sukanta Saha - DevOps Engineer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .skills, .experience, .education {
+            margin-top: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="container">
+            <div id="branding">
+                <h1>Sukanta Saha - DevOps Engineer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Introduce yourself here.</p>
+
+    <section class="container">
+        <h2>Contact Information</h2>
+        <p>New Town, Kolkata 700135, IN</p>
+        <p>Email: <a href="mailto:sukanta80@gmail.com">sukanta80@gmail.com</a></p>
+        <p>Phone: +91 9836235244</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sukanta-saha-38157932" target="_blank">linkedin.com/in/sukanta-saha-38157932</a></p>
+
+        <h2>Summary</h2>
+        <p>DevOps Engineer with extensive experience in automating software development, deployment, and infrastructure management. Proficient in a wide range of tools and technologies, including Ansible, AWS, Terraform, and Kubernetes. Seeking to leverage expertise in optimizing development workflows and ensuring smooth and efficient delivery of software products.</p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Database: Elasticsearch, MySQL, Cassandra, ScyllaDb, OpenSearch, Redshift</li>
+            <li>Orchestration Tools: Kubernetes, Docker, Helm Chart</li>
+            <li>Messaging System: Kafka & Zookeeper, AWS MSK</li>
+            <li>Cloud Technologies: AWS, Azure, GCP</li>
+            <li>Monitoring Tools: Sensu, Kibana, Grafana, InfluxDB, Prometheus</li>
+            <li>Log Tool: Graylog, Logstash</li>
+            <li>Version Control Tools: GitLab, Bitbucket</li>
+            <li>Configuration Management Tools: Ansible, Terraform</li>
+            <li>Scripting: Perl, Shell, Python</li>
+            <li>Deployment: Jenkins</li>
+            <li>Linux System Administration: Amazon Linux, CentOS, Debian, Ubuntu</li>
+        </ul>
+
+        <h2>Professional Experience</h2>
+        <div class="experience">
+            <h3>Zeta, Better World Technology Pvt. Ltd</h3>
+            <h4>SRE Lead | Hyderabad, Telangana, IN | 2022 - March 2024</h4>
+            <ul>
+                <li>Weave onboarding for different clusters running on Kubernetes</li>
+                <li>Deploying applications on Kubernetes cluster through Weave and Helm Chart</li>
+                <li>Managing Kubernetes clusters under a namespace, handling issues on pod level, service level, deployment failure, health check probe, ArgoCD sync, etc.</li>
+                <li>Provisioning and maintaining services like OpenSearch cluster, MSK cluster, jump box, and other applications using Terraform on AWS cloud</li>
+                <li>Reduced the cost of the production OpenSearch cluster by $5,000 per month</li>
+                <li>Involved in the complete Incident Management process for all the Sev's and frequently provided updates to leadership and business stakeholders</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Sprinklr Solution Pvt Ltd</h3>
+            <h4>DevOps Lead | Bangalore, Karnataka, IN | 2015 - 2022</h4>
+            <ul>
+                <li>Built and trained a team of 10 DevOps engineers to manage 1.5 PetaBytes of data on Elasticsearch, MySQL on a SaaS platform</li>
+                <li>Automated entire process of setting up MySQL cluster with regular backup on Azure Blob</li>
+                <li>Extensively worked on Elasticsearch database setup, maintenance, and optimization</li>
+                <li>Implemented Disaster Recovery and High Availability for the Sprinklr platform</li>
+                <li>Managed and optimized more than $30K per month in S3 cost for Elasticsearch backup</li>
+                <li>Created Ansible Playbooks and roles for provisioning various services</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Kaavo Inc./Kaavo Systems India Pvt. Ltd</h3>
+            <h4>Software Developer | Saltlake, Kolkata, IN | 2010 - 2015</h4>
+            <ul>
+                <li>Developed core features for Kaavo's IMOD product</li>
+                <li>Worked on web components and EJB components, deployed on JBoss Application Server</li>
+                <li>Used various development tools and technologies for building and maintaining the IMOD platform</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Tathya dot com pvt ltd</h3>
+            <h4>Consultant Programmer | Teghoria, Kolkata, IN | 2003 - 2010</h4>
+            <ul>
+                <li>Worked on various projects based on Java, Swing, J2EE, and other technologies</li>
+                <li>Developed and maintained multiple web-based applications and ERP software for clients</li>
+            </ul>
+        </div>
+
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Vinayaka Mission University</h3>
+            <h4>Bachelor of Computer Application | Tamil Nadu, IN | 2010 - 2012</h4>
+        </div>
     </section>
-    <section>
-        <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
-    </section>
+
+    <footer>
+        <p>Sukanta Saha &copy; 2024. All rights reserved.</p>
+    </footer>
 </body>
 </html>
